@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Google Form</title>
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+   
+</head>
+<body>
+   <div id="app">
+          <p>{{ name1 }}</p>
+          <p>{{ picked }}</p>
+          <ul>
+            <li v-for="item in checkedNames" :key="item">
+               <p>{{ item }}</p>
+            </li>
+         </ul>
+          
+    </div>
+
+   <script src="result.js"></script>
+</body>
+</html>
